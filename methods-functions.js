@@ -2,8 +2,8 @@
 
 const getBrands = inventory.map((getBrand) => {
     return getBrand.brand
-
 });
+
 let totalBrands = [ ];
 for (let i = 0; i < getBrands.length; i++) {
     totalBrands  = totalBrands + getBrands[i];
@@ -12,9 +12,9 @@ console.log(totalBrands);
 
 
 
-const televisionList = document.getElementById("television-list");
-console.log(televisionList);
-televisionList.textContent = totalBrands;
+// const televisionList = document.getElementById("television-list");
+// console.log(televisionList);
+// televisionList.textContent = totalBrands;
 
 
 

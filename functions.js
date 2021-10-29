@@ -22,6 +22,9 @@ const outcome2 = namesOfTelevisons([inventory[2]]);
 const outcome3 = namesOfTelevisons([inventory[5]]);
 console.log(outcome2, outcome3);
 
+
+
+
 // Opdracht 5B
 
 function listOfPrices (inventory) {
@@ -31,7 +34,7 @@ function listOfPrices (inventory) {
     return priceOfTelevisions;
 };
 const outcome4 = listOfPrices(inventory);
-const outcome5 = listOfPrices([inventory[3]]);
+const outcome5 = listOfPrices([inventory[2]]);
 console.log (outcome4, outcome5);
 
 //Opdracht 5C
@@ -42,10 +45,23 @@ function sizesOfTelevisions (inventory) {
     });
     return screenSizes;
 }
-const outcome6 = sizesOfTelevisions([inventory[0]]);
+
+const outcome6 = sizesOfTelevisions([inventory[2]]);
 console.log (outcome6);
 
 //Opdracht 5D
+
+const televisionString = document.getElementById("television-string");
+console.log(televisionString);
+televisionString.textContent = outcome2;
+
+const televisionPrice= document.getElementById("television-price");
+console.log(televisionPrice);
+televisionPrice.textContent = outcome5;
+
+const televisionSizes= document.getElementById("television-sizes");
+console.log(televisionSizes);
+televisionSizes.textContent = outcome6;
 
 
 
