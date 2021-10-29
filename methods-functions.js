@@ -15,17 +15,14 @@ televisionList.textContent = getBrands;
 
 //Opdracht 4B
 
-
-
     function televisionObjects(object) {
-        let totalBrands = [];
-        for (let i = 0; i < getBrands.length; i++) {
-            totalBrands = totalBrands + getBrands[i];
-        }
-        return totalBrands
+        const newBrand = inventory.map((newBrand) => {
+            return newBrand.brand
+        });
     }
-const outcome = televisionObjects([0])
-console.log(outcome);
+const outcome = televisionObjects(newBrand);
+    console.log(outcome);
+
 
 
 

@@ -12,10 +12,22 @@
 // console.log(stringOfTelevisions[1], stringOfTelevisions[3]);
 
 
-    const stringOfTelevisions = inventory.map((stringOfTelevisions) => {
-    return stringOfTelevisions.brand + " " + stringOfTelevisions.type + " - " + stringOfTelevisions.name;
+    const stringOfTelevisions = inventory.map((stringOfTelevision) => {
+    return stringOfTelevision.brand + " " + stringOfTelevision.type + " - " + stringOfTelevision.name;
 });
 
-console.log(stringOfTelevisions[1]);
+console.log(stringOfTelevisions[2]);
+
 // Opdracht 5B
 
+const priceOfTelevisions = inventory.map((priceOfTelevision) => {
+    return "€" + priceOfTelevision.price + ",-"
+})
+console.log (priceOfTelevisions[2]);
+
+//Opdracht 5C
+
+const screenSizes = inventory.map ((screenSize) => {
+    return screenSize.availableSizes
+});
+console.log (screenSizes);

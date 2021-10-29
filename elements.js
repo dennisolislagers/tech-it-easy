@@ -6,7 +6,7 @@ const totalSoldTelevisions = inventory.map((television) => {
 let totalSold = 0;
 for (let i = 0; i < totalSoldTelevisions.length; i++) {
     let television = totalSoldTelevisions[i];
-    totalSold = totalSold + television
+    totalSold += television
 }
 console.log (totalSold);
 
@@ -17,7 +17,7 @@ const totalTelevisionsInStock = inventory.map((totalInStock) => {
 let totalStock = 0;
 for (let i = 0; i < totalTelevisionsInStock.length; i++) {
     let television = totalTelevisionsInStock[i];
-    totalStock = totalStock + television
+    totalStock += television
 }
 console.log (totalStock);
 
@@ -25,6 +25,8 @@ console.log (totalStock);
 
 const televisionStillBeSold = totalStock - totalSold;
 console.log (televisionStillBeSold);
+
+//Opdracht 2B & 2D
 
 const televisionStart = document.getElementById("television-start");
 console.log(televisionStart);
