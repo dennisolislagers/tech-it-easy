@@ -16,8 +16,9 @@ const totalTelevisionsInStock = inventory.map((totalInStock) => {
 });
 let totalStock = 0;
 for (let i = 0; i < totalTelevisionsInStock.length; i++) {
-    let television = totalTelevisionsInStock[i];
-    totalStock += television
+    // let television = totalTelevisionsInStock[i];
+    // totalStock += television
+    totalStock += totalTelevisionsInStock[i];
 }
 console.log (totalStock);
 
@@ -26,7 +27,7 @@ console.log (totalStock);
 const televisionStillBeSold = totalStock - totalSold;
 console.log (televisionStillBeSold);
 
-//Opdracht 2B & 2D
+//Opdracht 2B & 2D & 2E
 
 const televisionStart = document.getElementById("television-start");
 console.log(televisionStart);
