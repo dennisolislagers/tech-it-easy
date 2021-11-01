@@ -1,20 +1,24 @@
 // Opdracht 3A
-
-const getBrands = inventory.map((getBrand) => {
+function listOfNames (inventory) {
+    const getBrands = inventory.map((getBrand) => {
     return getBrand.brand
-});
-
-let totalBrands = [ ];
-for (let i = 0; i < getBrands.length; i++) {
-    totalBrands  = totalBrands + getBrands[i];
+    });
+    return getBrands
 }
+const totalBrands = listOfNames(inventory)
 console.log(totalBrands);
 
 
+const televisionList = document.getElementById("television-list");
+let getBrands;forEach = (getBrand => {
+    let newBrand = document.createElement('li');
+    newBrand.textContent = getBrand;
+    televisionList.appendChild(newBrand);
+    return getBrands
+})
 
-// const televisionList = document.getElementById("television-list");
-// console.log(televisionList);
-// televisionList.textContent = totalBrands;
+console.log(televisionList);
+televisionList.textContent = totalBrands;
 
 
 
